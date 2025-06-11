@@ -701,7 +701,7 @@ section,
 
 @media (max-width: 768px) {
   .hero-logo {
-    top: 10%;
+    top: 3%;
     left: 50%;
     right: auto;
     transform: translateX(-50%);

@@ -667,7 +667,7 @@ section,
 .hero {
   position: relative;
   width: 100%;
-  min-height: 65vh; /* altura reduzida */
+  min-height: 60vh; /* altura reduzida */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -693,22 +693,20 @@ section,
 
 .hero-logo {
   position: absolute;
-  top: 10%;
-  right: 5%;
-  max-width: 120px;
-  width: 100%;
-  height: auto;
+  top: 20%;
+  right: 10%;
+  max-width: 200px;
   z-index: 3;
 }
 
-/* Responsivo para telas pequenas */
 @media (max-width: 768px) {
   .hero-logo {
-    top: 8%;
+    top: 15%;
     right: 5%;
-    max-width: 80px; /* menor no celular */
+    max-width: 150px;
   }
 }
+
 
 
 }

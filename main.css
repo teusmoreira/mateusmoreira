@@ -665,13 +665,13 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
+  position: relative;
   width: 100%;
   min-height: 60vh; /* altura reduzida */
-  position: relative;
-  padding: 40px 0; /* menos espaço vertical */
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  padding: 60px 0;
 }
 
 .hero-bg {
@@ -691,28 +691,22 @@ section,
   z-index: 2;
 }
 
-.hero .container {
-  position: relative;
-  z-index: 3;
-  text-align: right;
-}
-
 .hero-logo {
-  max-width: 300px;
-  height: auto;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  max-width: 200px;
   z-index: 3;
 }
 
 @media (max-width: 768px) {
-  .hero {
-    min-height: 50vh;
-    padding: 20px 0;
-  }
-
   .hero-logo {
-    max-width: 250px;
+    top: 15%;
+    right: 5%;
+    max-width: 150px;
   }
 }
+
 
 }
 

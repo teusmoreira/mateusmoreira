@@ -693,9 +693,9 @@ section,
 
 .hero-logo {
   position: absolute;
-  top: 5%;
+  top: 10%;
   right: 10%;
-  max-width: 650px;
+  max-width: 600px;
   z-index: 3;
 }
 
@@ -1748,4 +1748,3 @@ section,
 .certificados .icon i {
   display: inline-block;
 }
-

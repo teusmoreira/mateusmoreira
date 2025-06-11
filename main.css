@@ -701,11 +701,11 @@ section,
 
 @media (max-width: 768px) {
   .hero-logo {
-    top: 30%;
+    top: 15%;
     left: 40%;
     right: auto;
     transform: translateX(-50%);
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 

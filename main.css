@@ -1752,3 +1752,27 @@ section,
 .certificados .icon i {
   display: inline-block;
 }
+
+.card-footer {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+
+  .tools-title {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .tools-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .tools-icons img {
+    width: 32px; /* Tamanho ajustado para os ícones */
+    height: 32px;
+  }

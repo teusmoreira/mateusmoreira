@@ -24,20 +24,30 @@
   <link href="main.css" rel="stylesheet">
 
 <style>
+    /* Estilos Gerais do Menu (sem o sublinhado) */
+    @media (min-width: 1200px) {
+        .navmenu li:hover>a,
+        .navmenu .active,
+        .navmenu .active:focus {
+            color: #0d6efd; /* Cor azul para hover e ativo */
+        }
+    }
+
+    /* Estilos Específicos para o Seletor de Idioma */
     .language-switcher a {
-      text-decoration: none; /* Garante que não haja sublinhado por padrão */
+      text-decoration: none !important; /* Garante que não haja sublinhado */
       transition: 0.3s;
       padding: 0 5px;
     }
 
-    .language-switcher a:hover {
-      text-decoration: none; /* Remove o sublinhado também no estado de hover */
-      /* Opcional: você pode adicionar outro efeito de hover aqui, como uma mudança de cor */
-      /* color: #5c9bff; */ 
+    /* Esta regra impede que os idiomas não ativos fiquem azuis ao passar o mouse */
+    .navmenu .language-switcher:hover a:not(.active-lang) {
+        color: var(--nav-color) !important; /* Força a cor padrão do menu */
     }
 
+    /* Define a cor azul APENAS para o idioma que está ativo */
     .language-switcher a.active-lang {
-      color: #0d6efd;
+      color: #0d6efd !important; /* Força a cor azul para o idioma ativo */
       font-weight: 700;
     }
   </style>

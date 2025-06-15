@@ -22,6 +22,25 @@
   <link href="swiper-bundle.min.css" rel="stylesheet">
 
   <link href="main.css" rel="stylesheet">
+
+  <style>
+    .language-switcher a {
+      text-decoration: none; /* Remove o sublinhado por padrão */
+      transition: 0.3s;
+      padding: 0 5px; /* Adiciona um pequeno espaçamento para não ficarem colados */
+    }
+
+    .language-switcher a:hover {
+      text-decoration: underline; /* Adiciona sublinhado apenas no hover */
+    }
+
+    .language-switcher a.active-lang {
+      color: #0d6efd; /* Cor azul para o idioma ativo */
+      font-weight: 700; /* Deixa a fonte em negrito */
+      text-decoration: none; /* Garante que o ativo não seja sublinhado a menos que esteja em hover */
+    }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -42,9 +61,9 @@
           <li><a href="#portfolio" id="nav-portfolio">Portfolio</a></li>
           <li><a href="#recomend" id="nav-recommendations">Recommendations</a></li>
           <li class="language-switcher">
-            <a href="javascript:void(0);" onclick="changeLanguage('pt-br')">Português (BR)</a>
-            <a href="javascript:void(0);" onclick="changeLanguage('es')">Español</a>
-            <a href="javascript:void(0);" onclick="changeLanguage('en')">English</a>
+            <a href="javascript:void(0);" id="lang-pt-br" class="active-lang" onclick="changeLanguage('pt-br')">Português (BR)</a>
+            <a href="javascript:void(0);" id="lang-es" onclick="changeLanguage('es')">Español</a>
+            <a href="javascript:void(0);" id="lang-en" onclick="changeLanguage('en')">English</a>
           </li>
         </ul>
         <img class="mobile-nav-toggle d-xl-none bi bi-list" src="icons8-lista-50.png" style="width: 35px;">
@@ -613,29 +632,11 @@
     };
 
     function changeLanguage(lang) {
-      const elements = [
-        'sitetitle', 'nav-home', 'nav-about', 'nav-resume', 'nav-certificates', 'nav-portfolio', 
-        'nav-recommendations', 'skills-title', 'about-me-title', 'about-me-p1', 'about-me-p2',
-        'resume-section-title', 'summary-title', 'summary-content', 'education-title', 
-        'education-1-title', 'education-1-institution', 'education-1-description', 
-        'education-2-title', 'education-2-institution', 'education-2-description',
-        'experience-title', 'experience-1-title', 'experience-1-company', 'experience-1-li-1',
-        'experience-1-li-2', 'experience-1-li-3', 'experience-2-title', 'experience-2-company',
-        'experience-2-li-1', 'experience-2-li-2', 'certificates-title', 'certificate-1-title',
-        'certificate-2-title', 'portfolio-section-title', 'portfolio-1-title', 'portfolio-1-p',
-        'portfolio-1-tools', 'portfolio-1-button', 'portfolio-2-title', 'portfolio-2-p', 
-        'portfolio-2-tools', 'portfolio-2-button', 'portfolio-3-title', 'portfolio-3-p',
-        'portfolio-3-tools', 'portfolio-3-button', 'faq-title', 'faq-p', 'faq-1-q', 'faq-1-a',
-        'faq-2-q', 'faq-2-a', 'faq-3-q', 'faq-3-a', 'faq-4-q', 'faq-4-a', 'recommendations-title',
-        'recommendation-1-name', 'recommendation-1-role', 'recommendation-1-p',
-        'recommendation-2-name', 'recommendation-2-role', 'recommendation-2-p',
-        'recommendation-3-name', 'recommendation-3-role', 'recommendation-3-p'
-      ];
-
+      // Lógica de tradução
+      const elements = Object.keys(translations['pt-br']);
       elements.forEach(id => {
         const element = document.getElementById(id);
         if (element) {
-          // Use innerHTML for elements that might contain other tags like <a> or <strong>
           if (['about-me-p1', 'faq-title'].includes(id)) {
             element.innerHTML = translations[lang][id];
           } else {
@@ -643,6 +644,24 @@
           }
         }
       });
+
+      // Lógica para o estilo do link ativo
+      document.querySelectorAll('.language-switcher a').forEach(link => {
+        link.classList.remove('active-lang');
+      });
+      
+      let activeLink;
+      if (lang === 'pt-br') {
+        activeLink = document.getElementById('lang-pt-br');
+      } else if (lang === 'es') {
+        activeLink = document.getElementById('lang-es');
+      } else {
+        activeLink = document.getElementById('lang-en');
+      }
+      
+      if(activeLink) {
+        activeLink.classList.add('active-lang');
+      }
     }
   </script>
 

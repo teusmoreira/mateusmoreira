@@ -1753,26 +1753,34 @@ section,
   display: inline-block;
 }
 
-.card-footer {
-    margin-top: 15px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
-  }
+.skills-content {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}
 
-  .tools-title {
-    font-size: 1em;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #333;
-  }
+.skills-content h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
 
-  .tools-icons {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
+.skills-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
-  .tools-icons img {
-    width: 32px; /* Tamanho ajustado para os ícones */
-    height: 32px;
-  }
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.skill-icon img {
+  width: 32px;
+  height: 32px;
+}
+

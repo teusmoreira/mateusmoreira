@@ -1754,7 +1754,7 @@ section,
 }
 
 .skills-content {
-  margin-top: 20px;
+  margin-top: auto; /* fixa no final do card */
   padding-top: 10px;
   border-top: 1px solid #e0e0e0;
 }

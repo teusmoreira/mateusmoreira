@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,23 +8,19 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
   <link href="favicon.png" rel="icon">
   <link href="apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="bootstrap-icons.css" rel="stylesheet">
   <link href="aos.css" rel="stylesheet">
   <link href="glightbox.min.css" rel="stylesheet">
   <link href="swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="main.css" rel="stylesheet">
 </head>
 
@@ -35,8 +30,6 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Meu Portfólio</h1>
       </a>
 
@@ -48,7 +41,11 @@
            <li><a href="#certificados">Certificates</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#recomend">Recommendations</a></li>
-         
+          <li class="language-switcher">
+            <a href="#" onclick="changeLanguage('pt-br')">Português (BR)</a>
+            <a href="#" onclick="changeLanguage('es')">Español</a>
+            <a href="#" onclick="changeLanguage('en')">English</a>
+          </li>
         </ul>
         <img class="mobile-nav-toggle d-xl-none bi bi-list" src="icons8-lista-50.png" style="width: 35px;">
       </nav>
@@ -64,7 +61,6 @@
 </section>
 
 
-    <!-- About Section -->
     <section id="about" class="about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -130,17 +126,11 @@
 
       </div>
 
-    </section><!-- /About Section -->
+    </section><section id="resume" class="resume section">
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
+      </div><div class="container">
 
         <div class="row">
 
@@ -155,24 +145,18 @@
                 <li>(11) 956382691</li>
                 <li>mateus.costamoreira@hotmail.com</li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
+            </div><h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Técnologo em Ciência de Dados</h4>
               <h5>2024 - 2027</h5>
               <p><em>Faculdade de Tecnologia de Cotia - São Paulo</em></p>
               <p>PowerBI, Python para análise de dados, estatística, fundamentos de marketing e emprendedorismo, banco de dados etc.</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
+            </div><div class="resume-item">
               <h4>Técnico em Informática</h4>
               <h5>2022 - 2024</h5>
               <p><em>The Highway - Cotia, SP</em></p>
               <p>Pacote Office, manutenção de computadores, lógica de programação, banco de dados, WebDesign.</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
+            </div></div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
@@ -185,9 +169,7 @@
                 <li>Responsável pela extração, limpeza e transformação de dados (ETL) para manipulação;</li>
                 <li>Comunicar e prestar suporte a diversas áreas no uso do BI;</li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
+            </div><div class="resume-item">
               <h4>Estágio em Programação PHP</h4>
               <h5>09/2023 - 12/2024</h5>
               <p><em>Flowinfo - Cotia, São Paulo</em></p>
@@ -195,24 +177,19 @@
                 <li>Desenvolvimento de funções e páginas utilizando PHP, HTML e CSS;</li>
                 <li>Integração e manipulação de dados em SQL (MySQL);</li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
+            </div></div>
 
         </div>
 
       </div>
 
-    </section><!-- /Resume Section -->
-
-<section id="certificados" class="section  text-black">
+    </section><section id="certificados" class="section  text-black">
   <div class="container" data-aos="fade-up">
     <div class="section-title text-center mb-5">
       <h2 class="text-black">Courses and Certificates</h2>
     </div>
 
     <div class="row justify-content-center">
-      <!-- Card 1 -->
       <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
         <div class="card text-center p-4 text-black rounded" style="width: 18rem;">
           <div class="icon mb-3">
@@ -222,7 +199,6 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
         <div class="card text-center p-4 text-black rounded" style="width: 18rem;">
           <div class="icon mb-3">
@@ -237,15 +213,11 @@
 
 
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-      </div><!-- End Section Title -->
-
-      <section class="dashboards-section">
+      </div><section class="dashboards-section">
   <div class="dashboard-cards">
 
     <div class="card">
@@ -256,7 +228,6 @@
       <h3>Dashboard de Recursos Humanos</h3>
       <p>Desta vez desenvolvi um tamplate na plataforma Figma. Neste dashboard há duas telas, sendo a primeira um panorama geral dos funcionários da empresa fictícia e a outra com uma visão mais precisa de cada colaborador contando com avaliação de desempenho, dados pessoais etc. Como quis trazer o detalhe de cada funcionário, transformei as avaliações de desempenho e as infos em tabelas separadas fazendo uma breve modelagem e relacionamento entre tabelas para que funcionasse como queria.</p>
 
-      <!-- Skills dentro do card -->
       <div class="skills-content">
         <h5>Used Tools</h5>
         <div class="skills-row">
@@ -269,8 +240,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Repita o mesmo para os outros cards -->
 
     <div class="card">
       <div class="card-img">
@@ -292,8 +261,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Último card com rodapé -->
 
     <div class="card">
       <div class="card-img">
@@ -327,10 +294,7 @@
 
       </div>
 
-    </section><!-- /Portfolio Section -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
+    </section><section id="faq" class="faq section">
 
       <div class="container">
 
@@ -354,43 +318,32 @@
                   <p>Um dashboard traz uma visualização de dados para tomada de decisão. Seu papel para futuros investimentos ou ações na empresa são essenciais para que haja uma transparência dos dados, e que traga diversos insights que apenas números brutos não seriam capazes de fornecer.</p>
                 </div>
                 
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
+              </div><div class="faq-item">
                 <h3><span class="num">2.</span> <span>Por que um storytelling é essencial quando se trata de visualização de dados?</span></h3>
                 <div>
                   <p>Um storytelling de dados bem feito faz com que tenhamos uma melhor memorização do que foi mostrado nas visualizações, assim como ainda nos recordamos de obras literárias com suas hitórias marcantes.</p>
                 </div>
                 
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
+              </div><div class="faq-item">
                 <h3><span class="num">3.</span> <span>Por que a análise/ciência de dados está em alta no mercado?</span></h3>
                 <div>
                   <p>Tudo envolve a ciência de dados. Desde decisões de marketing por algoritmos ou tendências de compra, até em partidas de futebol com mapeamento dos jogadores para futuras análises.</p>
                 </div>
                 
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
+              </div><div class="faq-item">
                 <h3><span class="num">4.</span> <span>No que se baseia o Business Intelligence?</span></h3>
                 <div">
                   <p>Ao contrário que muitas pessoas pensam, o desenvolvimento de dashboards em si é apenas um recorte do que é a área de Business Intelligence. BI se resume no entendimento do negócio antes de qualquer coisa, para que os dashboards e relatórios atendam a necessidade principal do projeto. </p>
                 </div>
                 
-              </div><!-- End Faq item-->
-
-            </div>
+              </div></div>
 
           </div>
         </div>
 
       </div>
 
-    </section><!-- /Faq Section -->
-
-    <!-- Testimonials Section -->
-    <section id="recomend" class="testimonials section accent-background">
+    </section><section id="recomend" class="testimonials section accent-background">
 
       <img src="testimonials-bg.jpg" class="testimonials-bg" alt="">
 
@@ -399,8 +352,7 @@
         <div class="swiper init-swiper">
           
           
-   <!-- Testimonials Section -->
-<section id="testimonials" class="testimonials section-bg">
+   <section id="testimonials" class="testimonials section-bg">
   <div class="container">
 
     <div class="section-title">
@@ -408,9 +360,7 @@
   
     </div>
 
-    <!-- Swiper Container -->
-   <!-- Testimonials Section -->
-<section id="testimonials" class="testimonials section-bg">
+    <section id="testimonials" class="testimonials section-bg">
   <div class="container">
 
     <div class="testimonials-grid">
@@ -449,16 +399,13 @@
         </p>
       </div>
 
-      <!-- Adicione mais cards aqui se quiser -->
-    </div>
+      </div>
 
   </div>
 </section>
 
 
-        <!-- Adicione mais swiper-slide conforme necessário -->
-
-      </div>
+        </div>
       
     </div>
 
@@ -472,13 +419,10 @@
 
 
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><img src="icons8-divisa-circulada-acima-50.png" alt=""></a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="bootstrap.bundle.min.js"></script>
   <script src="aos.js"></script>
   <script src="noframework.waypoints.js"></script>
@@ -487,8 +431,257 @@
   <script src="imagesloaded.pkgd.min.js"></script>
   <script src="isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
   <script src="main.js"></script>
+
+  <script>
+    const translations = {
+      'pt-br': {
+        'nav-home': 'Home',
+        'nav-about': 'Sobre',
+        'nav-resume': 'Currículo',
+        'nav-certificates': 'Certificados',
+        'nav-portfolio': 'Portfólio',
+        'nav-recommendations': 'Recomendações',
+        'about-me-title': 'Sobre mim',
+        'about-me-p1': 'Meu nome é Mateus Martins Costa Moreira, tenho 22 anos e sou estudante de Ciência de Dados na FATEC Cotia. Iniciei minha carreira profissional como programador em PHP e MySQL e migrei para a área de Business Intelligence/Análise de Dados. Atualmente, atuo como Analista de Dados na empresa Symrise AG, onde sou responsável por desenvolver relatórios e dashboards utilizando Power BI/Microstrategy, além de realizar análises de dados para auxiliar na tomada de decisões estratégicas.',
+        'about-me-p2': 'Meu objetivo é continuar aprimorando minhas habilidades em análise de dados e BI, buscando sempre novas oportunidades de aprendizado e crescimento profissional. Estou sempre aberto a novos desafios e disposto a contribuir com minha experiência e conhecimento para o sucesso da equipe.',
+        'resume-title': 'Currículo',
+        'summary-title': 'Resumo',
+        'summary-content': 'Estudante de Ciência de Dados e atualmente estagiando em Business Intelligence',
+        'education-title': 'Formação',
+        'education-1-title': 'Técnologo em Ciência de Dados',
+        'education-1-institution': 'Faculdade de Tecnologia de Cotia - São Paulo',
+        'education-1-description': 'PowerBI, Python para análise de dados, estatística, fundamentos de marketing e emprendedorismo, banco de dados etc.',
+        'education-2-title': 'Técnico em Informática',
+        'education-2-institution': 'The Highway - Cotia, SP',
+        'education-2-description': 'Pacote Office, manutenção de computadores, lógica de programação, banco de dados, WebDesign.',
+        'experience-title': 'Experiência Profissional',
+        'experience-1-title': 'Estagiário em Business Intelligence',
+        'experience-1-company': 'Symrise AG - Cotia, São Paulo',
+        'experience-1-li-1': 'Desenvolvimento de Dashboards em PowerBI/Microstrategy para análise de dados;',
+        'experience-1-li-2': 'Responsável pela extração, limpeza e transformação de dados (ETL) para manipulação;',
+        'experience-1-li-3': 'Comunicar e prestar suporte a diversas áreas no uso do BI;',
+        'experience-2-title': 'Estágio em Programação PHP',
+        'experience-2-company': 'Flowinfo - Cotia, São Paulo',
+        'experience-2-li-1': 'Desenvolvimento de funções e páginas utilizando PHP, HTML e CSS;',
+        'experience-2-li-2': 'Integração e manipulação de dados em SQL (MySQL);',
+        'certificates-title': 'Cursos e Certificados',
+        'certificate-1-title': 'TOEIC - B2 em inglês (Listening and Reading)',
+        'certificate-2-title': 'Udemy - Data Storytelling e Visualização de Dados',
+        'portfolio-title': 'Portfólio',
+        'portfolio-1-title': 'Dashboard de Recursos Humanos',
+        'portfolio-1-p': 'Desta vez desenvolvi um tamplate na plataforma Figma. Neste dashboard há duas telas, sendo a primeira um panorama geral dos funcionários da empresa fictícia e a outra com uma visão mais precisa de cada colaborador contando com avaliação de desempenho, dados pessoais etc. Como quis trazer o detalhe de cada funcionário, transformei as avaliações de desempenho e as infos em tabelas separadas fazendo uma breve modelagem e relacionamento entre tabelas para que funcionasse como queria.',
+        'portfolio-2-title': 'Dashboard de Vendas.',
+        'portfolio-2-p': 'Projeto pessoal de dashboard com dados fictícios de uma empresa de produtos eletrônicos. Como foi um dos meus primeiros dashboards (sendo o primeiro em Power BI) serviu muito como aprendizado para que eu possa colocar em prática meus conhecimentos em ETL, storytelling de dados e um pouco de comunicação visual.',
+        'portfolio-3-title': 'Dashboard de transparência de dados do terceiro setor em Cotia.',
+        'portfolio-3-p': 'Projeto acadêmico sobre a transparência de dados dos repasses do terceiro setor em Cotia para a banca do município, visando a acessibilidade a essas informações para a população. Usei Python (Pandas) e Excel para limpeza de dados, metodologias ágeis de projeto (SCRUM), e claro, PowerBI com sua habilidade poderosíssima em visualizações de dados. Também implementei um ChatBot em LLM para que sane as principais dúvidas sobre o que são repasses, o que é o terceiro setor, dados gerais etc.',
+        'faq-title': '<span>Perguntas </span><strong>Frequentes</strong>',
+        'faq-p': 'Elaborei algumas perguntas frequentes que podem ajudar a esclarecer dúvidas comuns sobre a Business Intelligence e Análise de dados. Se você tiver outras perguntas, sinta-se à vontade para entrar em contato comigo diretamente.',
+        'faq-1-q': 'Qual a importância de um dashboard para sua empresa?',
+        'faq-1-a': 'Um dashboard traz uma visualização de dados para tomada de decisão. Seu papel para futuros investimentos ou ações na empresa são essenciais para que haja uma transparência dos dados, e que traga diversos insights que apenas números brutos não seriam capazes de fornecer.',
+        'faq-2-q': 'Por que um storytelling é essencial quando se trata de visualização de dados?',
+        'faq-2-a': 'Um storytelling de dados bem feito faz com que tenhamos uma melhor memorização do que foi mostrado nas visualizações, assim como ainda nos recordamos de obras literárias com suas hitórias marcantes.',
+        'faq-3-q': 'Por que a análise/ciência de dados está em alta no mercado?',
+        'faq-3-a': 'Tudo envolve a ciência de dados. Desde decisões de marketing por algoritmos ou tendências de compra, até em partidas de futebol com mapeamento dos jogadores para futuras análises.',
+        'faq-4-q': 'No que se baseia o Business Intelligence?',
+        'faq-4-a': 'Ao contrário que muitas pessoas pensam, o desenvolvimento de dashboards em si é apenas um recorte do que é a área de Business Intelligence. BI se resume no entendimento do negócio antes de qualquer coisa, para que os dashboards e relatórios atendam a necessidade principal do projeto.',
+        'recommendations-title': 'Recomendações',
+        'recommendation-1-name': 'Maria Eduarda Cruz',
+        'recommendation-1-role': 'Estudante de Ciência de Dados',
+        'recommendation-1-p': '"O Mateus é o perfeito exemplo de proatividade e entusiasmo em projetos. Se há algo a ser desenvolvido, ele analisa técnicas, pesquisa ferramentas e pensa na melhor solução. Excelente!"',
+        'recommendation-2-name': 'Matheus Amaral',
+        'recommendation-2-role': 'Estagiário de Pricing na Symrise',
+        'recommendation-2-p': '"Mateus é um profissional colaborativo e diligente, e por isso, será sempre uma grande adição na equipe em que estiver presente"',
+        'recommendation-3-name': 'Lucas Sousa',
+        'recommendation-3-role': 'Estudante de Ciência de Dados',
+        'recommendation-3-p': '"Uma das melhores pessoas com quem trabalhei: excelente profissional, comprometido com os objetivos, atencioso às mudanças e sempre em busca de melhoria."'
+      },
+      'es': {
+        'nav-home': 'Inicio',
+        'nav-about': 'Sobre mí',
+        'nav-resume': 'Currículum',
+        'nav-certificates': 'Certificados',
+        'nav-portfolio': 'Portafolio',
+        'nav-recommendations': 'Recomendaciones',
+        'about-me-title': 'Sobre mí',
+        'about-me-p1': 'Mi nombre es Mateus Martins Costa Moreira, tengo 22 años y soy estudiante de Ciencia de Datos en FATEC Cotia. Comencé mi carrera profesional como programador en PHP y MySQL y migré al área de Business Intelligence/Análisis de Datos. Actualmente, trabajo como Analista de Datos en la empresa Symrise AG, donde soy responsable de desarrollar informes y dashboards utilizando Power BI/Microstrategy, además de realizar análisis de datos para ayudar en la toma de decisiones estratégicas.',
+        'about-me-p2': 'Mi objetivo es seguir mejorando mis habilidades en análisis de datos y BI, buscando siempre nuevas oportunidades de aprendizaje y crecimiento profesional. Siempre estoy abierto a nuevos desafíos y dispuesto a contribuir con mi experiencia y conocimiento para el éxito del equipo.',
+        'resume-title': 'Currículum',
+        'summary-title': 'Resumen',
+        'summary-content': 'Estudiante de Ciencia de Datos y actualmente en prácticas en Business Intelligence',
+        'education-title': 'Educación',
+        'education-1-title': 'Tecnólogo en Ciencia de Datos',
+        'education-1-institution': 'Facultad de Tecnología de Cotia - São Paulo',
+        'education-1-description': 'PowerBI, Python para análisis de datos, estadística, fundamentos de marketing y emprendimiento, bases de datos, etc.',
+        'education-2-title': 'Técnico en Informática',
+        'education-2-institution': 'The Highway - Cotia, SP',
+        'education-2-description': 'Paquete Office, mantenimiento de computadoras, lógica de programación, bases de datos, WebDesign.',
+        'experience-title': 'Experiencia Profesional',
+        'experience-1-title': 'Becario en Business Intelligence',
+        'experience-1-company': 'Symrise AG - Cotia, São Paulo',
+        'experience-1-li-1': 'Desarrollo de Dashboards en PowerBI/Microstrategy para análisis de datos;',
+        'experience-1-li-2': 'Responsable de la extracción, limpieza y transformación de datos (ETL) para su manipulación;',
+        'experience-1-li-3': 'Comunicar y prestar soporte a diversas áreas en el uso del BI;',
+        'experience-2-title': 'Prácticas en Programación PHP',
+        'experience-2-company': 'Flowinfo - Cotia, São Paulo',
+        'experience-2-li-1': 'Desarrollo de funciones y páginas utilizando PHP, HTML y CSS;',
+        'experience-2-li-2': 'Integración y manipulación de datos en SQL (MySQL);',
+        'certificates-title': 'Cursos y Certificados',
+        'certificate-1-title': 'TOEIC - B2 en inglés (Listening and Reading)',
+        'certificate-2-title': 'Udemy - Data Storytelling y Visualización de Datos',
+        'portfolio-title': 'Portafolio',
+        'portfolio-1-title': 'Dashboard de Recursos Humanos',
+        'portfolio-1-p': 'Esta vez desarrollé una plantilla en la plataforma Figma. En este dashboard hay dos pantallas, la primera es un panorama general de los empleados de la empresa ficticia y la otra con una visión más precisa de cada colaborador, incluyendo evaluación de desempeño, datos personales, etc. Como quise detallar a cada empleado, transformé las evaluaciones de desempeño y la información en tablas separadas, haciendo un breve modelado y relación entre tablas para que funcionara como quería.',
+        'portfolio-2-title': 'Dashboard de Ventas.',
+        'portfolio-2-p': 'Proyecto personal de dashboard con datos ficticios de una empresa de productos electrónicos. Como fue uno de mis primeros dashboards (siendo el primero en Power BI), me sirvió mucho como aprendizaje para poner en práctica mis conocimientos en ETL, storytelling de datos y un poco de comunicación visual.',
+        'portfolio-3-title': 'Dashboard de transparencia de datos del tercer sector en Cotia.',
+        'portfolio-3-p': 'Proyecto académico sobre la transparencia de datos de las transferencias del tercer sector en Cotia para el comité del municipio, con el objetivo de hacer accesible esta información a la población. Usé Python (Pandas) y Excel para la limpieza de datos, metodologías ágiles de proyecto (SCRUM), y por supuesto, PowerBI con su potentísima habilidad en visualizaciones de datos. También implementé un ChatBot en LLM para resolver las principales dudas sobre qué son las transferencias, qué es el tercer sector, datos generales, etc.',
+        'faq-title': '<span>Preguntas </span><strong>Frecuentes</strong>',
+        'faq-p': 'He preparado algunas preguntas frecuentes que pueden ayudar a aclarar dudas comunes sobre Business Intelligence y Análisis de Datos. Si tienes otras preguntas, no dudes en contactarme directamente.',
+        'faq-1-q': '¿Cuál es la importancia de un dashboard para su empresa?',
+        'faq-1-a': 'Un dashboard proporciona una visualización de datos para la toma de decisiones. Su papel en futuras inversiones o acciones en la empresa es esencial para la transparencia de los datos y para generar insights que los números brutos por sí solos no podrían proporcionar.',
+        'faq-2-q': '¿Por qué es esencial el storytelling cuando se trata de visualización de datos?',
+        'faq-2-a': 'Un buen storytelling de datos nos ayuda a recordar mejor lo que se muestra en las visualizaciones, de la misma manera que recordamos obras literarias con sus historias memorables.',
+        'faq-3-q': '¿Por qué el análisis/ciencia de datos está en auge en el mercado?',
+        'faq-3-a': 'Todo involucra la ciencia de datos. Desde decisiones de marketing basadas en algoritmos o tendencias de compra, hasta en partidos de fútbol con el mapeo de jugadores para futuros análisis.',
+        'faq-4-q': '¿En qué se basa el Business Intelligence?',
+        'faq-4-a': 'Contrariamente a lo que mucha gente piensa, el desarrollo de dashboards en sí es solo una parte de lo que es el área de Business Intelligence. El BI se resume en entender el negocio antes que nada, para que los dashboards e informes satisfagan la necesidad principal del proyecto.',
+        'recommendations-title': 'Recomendaciones',
+        'recommendation-1-name': 'Maria Eduarda Cruz',
+        'recommendation-1-role': 'Estudiante de Ciencia de Datos',
+        'recommendation-1-p': '"Mateus es el ejemplo perfecto de proactividad y entusiasmo en los proyectos. Si hay algo que desarrollar, analiza técnicas, investiga herramientas y piensa en la mejor solución. ¡Excelente!"',
+        'recommendation-2-name': 'Matheus Amaral',
+        'recommendation-2-role': 'Becario de Pricing en Symrise',
+        'recommendation-2-p': '"Mateus es un profesional colaborador y diligente, y por eso, siempre será una gran adición al equipo en el que esté presente"',
+        'recommendation-3-name': 'Lucas Sousa',
+        'recommendation-3-role': 'Estudiante de Ciencia de Datos',
+        'recommendation-3-p': '"Una de las mejores personas con las que he trabajado: excelente profesional, comprometido con los objetivos, atento a los cambios y siempre en busca de la mejora."'
+      },
+      'en': {
+        'nav-home': 'Home',
+        'nav-about': 'About',
+        'nav-resume': 'Resume',
+        'nav-certificates': 'Certificates',
+        'nav-portfolio': 'Portfolio',
+        'nav-recommendations': 'Recommendations',
+        'about-me-title': 'About me',
+        'about-me-p1': 'My name is Mateus Martins Costa Moreira, I am 22 years old and a Data Science student at FATEC Cotia. I started my professional career as a PHP and MySQL programmer and migrated to the area of Business Intelligence/Data Analysis. Currently, I work as a Data Analyst at Symrise AG, where I am responsible for developing reports and dashboards using Power BI/Microstrategy, as well as performing data analysis to assist in strategic decision-making.',
+        'about-me-p2': 'My goal is to continue improving my skills in data analysis and BI, always seeking new learning and professional growth opportunities. I am always open to new challenges and willing to contribute my experience and knowledge to the team\'s success.',
+        'resume-title': 'Resume',
+        'summary-title': 'Summary',
+        'summary-content': 'Data Science student currently interning in Business Intelligence',
+        'education-title': 'Education',
+        'education-1-title': 'Technologist in Data Science',
+        'education-1-institution': 'Cotia Faculty of Technology - São Paulo',
+        'education-1-description': 'PowerBI, Python for data analysis, statistics, marketing and entrepreneurship fundamentals, databases, etc.',
+        'education-2-title': 'Technician in Informatics',
+        'education-2-institution': 'The Highway - Cotia, SP',
+        'education-2-description': 'Office Suite, computer maintenance, programming logic, databases, WebDesign.',
+        'experience-title': 'Professional Experience',
+        'experience-1-title': 'Business Intelligence Intern',
+        'experience-1-company': 'Symrise AG - Cotia, São Paulo',
+        'experience-1-li-1': 'Development of Dashboards in PowerBI/Microstrategy for data analysis;',
+        'experience-1-li-2': 'Responsible for data extraction, cleaning, and transformation (ETL) for manipulation;',
+        'experience-1-li-3': 'Communicate and provide support to various areas in the use of BI;',
+        'experience-2-title': 'PHP Programming Internship',
+        'experience-2-company': 'Flowinfo - Cotia, São Paulo',
+        'experience-2-li-1': 'Development of functions and pages using PHP, HTML, and CSS;',
+        'experience-2-li-2': 'Integration and manipulation of data in SQL (MySQL);',
+        'certificates-title': 'Courses and Certificates',
+        'certificate-1-title': 'TOEIC - B2 in English (Listening and Reading)',
+        'certificate-2-title': 'Udemy - Data Storytelling and Data Visualization',
+        'portfolio-title': 'Portfolio',
+        'portfolio-1-title': 'Human Resources Dashboard',
+        'portfolio-1-p': 'This time I developed a template on the Figma platform. This dashboard has two screens, the first being a general overview of the fictitious company\'s employees and the other with a more precise view of each collaborator, including performance evaluation, personal data, etc. As I wanted to detail each employee, I transformed the performance evaluations and info into separate tables, doing a brief modeling and relationship between tables so that it worked as I wanted.',
+        'portfolio-2-title': 'Sales Dashboard.',
+        'portfolio-2-p': 'Personal dashboard project with fictitious data from an electronics company. As it was one of my first dashboards (being the first in Power BI), it served as a great learning experience for me to put into practice my knowledge of ETL, data storytelling, and a bit of visual communication.',
+        'portfolio-3-title': 'Third sector data transparency dashboard in Cotia.',
+        'portfolio-3-p': 'Academic project on the transparency of data from third sector transfers in Cotia for the municipality\'s board, aiming to make this information accessible to the population. I used Python (Pandas) and Excel for data cleaning, agile project methodologies (SCRUM), and of course, PowerBI with its powerful data visualization capabilities. I also implemented an LLM ChatBot to answer the main questions about what transfers are, what the third sector is, general data, etc.',
+        'faq-title': '<span>Frequently Asked </span><strong>Questions</strong>',
+        'faq-p': 'I have prepared some frequently asked questions that can help clarify common doubts about Business Intelligence and Data Analysis. If you have other questions, feel free to contact me directly.',
+        'faq-1-q': 'What is the importance of a dashboard for your company?',
+        'faq-1-a': 'A dashboard provides a data visualization for decision-making. Its role in future investments or actions in the company is essential for data transparency and to generate insights that raw numbers alone could not provide.',
+        'faq-2-q': 'Why is storytelling essential when it comes to data visualization?',
+        'faq-2-a': 'Good data storytelling helps us to better remember what was shown in the visualizations, just as we still remember literary works with their memorable stories.',
+        'faq-3-q': 'Why is data analysis/science booming in the market?',
+        'faq-3-a': 'Everything involves data science. From marketing decisions based on algorithms or purchasing trends, to soccer matches with player mapping for future analysis.',
+        'faq-4-q': 'What is Business Intelligence based on?',
+        'faq-4-a': 'Contrary to what many people think, the development of dashboards itself is just a part of what the Business Intelligence area is. BI is summarized in understanding the business first of all, so that the dashboards and reports meet the main need of the project.',
+        'recommendations-title': 'Recommendations',
+        'recommendation-1-name': 'Maria Eduarda Cruz',
+        'recommendation-1-role': 'Data Science Student',
+        'recommendation-1-p': '"Mateus is the perfect example of proactivity and enthusiasm in projects. If there is something to be developed, he analyzes techniques, researches tools and thinks of the best solution. Excellent!"',
+        'recommendation-2-name': 'Matheus Amaral',
+        'recommendation-2-role': 'Pricing Intern at Symrise',
+        'recommendation-2-p': '"Mateus is a collaborative and diligent professional, and therefore, will always be a great addition to the team he is on"',
+        'recommendation-3-name': 'Lucas Sousa',
+        'recommendation-3-role': 'Data Science Student',
+        'recommendation-3-p': '"One of the best people I have worked with: an excellent professional, committed to the objectives, attentive to changes and always seeking improvement."'
+      }
+    };
+
+    function changeLanguage(lang) {
+      document.querySelector('#navmenu ul li:nth-child(1) a').textContent = translations[lang]['nav-home'];
+      document.querySelector('#navmenu ul li:nth-child(2) a').textContent = translations[lang]['nav-about'];
+      document.querySelector('#navmenu ul li:nth-child(3) a').textContent = translations[lang]['nav-resume'];
+      document.querySelector('#navmenu ul li:nth-child(4) a').textContent = translations[lang]['nav-certificates'];
+      document.querySelector('#navmenu ul li:nth-child(5) a').textContent = translations[lang]['nav-portfolio'];
+      document.querySelector('#navmenu ul li:nth-child(6) a').textContent = translations[lang]['nav-recommendations'];
+      document.querySelector('.about-me h4').textContent = translations[lang]['about-me-title'];
+      document.querySelector('.about-me p:nth-of-type(1)').innerHTML = translations[lang]['about-me-p1'];
+      document.querySelector('.about-me p:nth-of-type(2)').textContent = translations[lang]['about-me-p2'];
+      document.querySelector('#resume .section-title h2').textContent = translations[lang]['resume-title'];
+      document.querySelector('.resume-title:nth-of-type(1)').textContent = translations[lang]['summary-title'];
+      document.querySelector('.resume-item.pb-0 p em').textContent = translations[lang]['summary-content'];
+      document.querySelector('.resume-title:nth-of-type(2)').textContent = translations[lang]['education-title'];
+      document.querySelector('.resume-item:nth-of-type(2) h4').textContent = translations[lang]['education-1-title'];
+      document.querySelector('.resume-item:nth-of-type(2) p:nth-of-type(1) em').textContent = translations[lang]['education-1-institution'];
+      document.querySelector('.resume-item:nth-of-type(2) p:nth-of-type(2)').textContent = translations[lang]['education-1-description'];
+      document.querySelector('.resume-item:nth-of-type(3) h4').textContent = translations[lang]['education-2-title'];
+      document.querySelector('.resume-item:nth-of-type(3) p:nth-of-type(1) em').textContent = translations[lang]['education-2-institution'];
+      document.querySelector('.resume-item:nth-of-type(3) p:nth-of-type(2)').textContent = translations[lang]['education-2-description'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-title').textContent = translations[lang]['experience-title'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-item:nth-of-type(1) h4').textContent = translations[lang]['experience-1-title'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-item:nth-of-type(1) p em').textContent = translations[lang]['experience-1-company'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-item:nth-of-type(1) ul li:nth-child(1)').textContent = translations[lang]['experience-1-li-1'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-item:nth-of-type(1) ul li:nth-child(2)').textContent = translations[lang]['experience-1-li-2'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-item:nth-of-type(1) ul li:nth-child(3)').textContent = translations[lang]['experience-1-li-3'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-item:nth-of-type(2) h4').textContent = translations[lang]['experience-2-title'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-item:nth-of-type(2) p em').textContent = translations[lang]['experience-2-company'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-item:nth-of-type(2) ul li:nth-child(1)').textContent = translations[lang]['experience-2-li-1'];
+      document.querySelector('.col-lg-6:nth-child(2) .resume-item:nth-of-type(2) ul li:nth-child(2)').textContent = translations[lang]['experience-2-li-2'];
+      document.querySelector('#certificados .section-title h2').textContent = translations[lang]['certificates-title'];
+      document.querySelector('#certificados .card:nth-of-type(1) .card-title').textContent = translations[lang]['certificate-1-title'];
+      document.querySelector('#certificados .card:nth-of-type(2) .card-title').textContent = translations[lang]['certificate-2-title'];
+      document.querySelector('#portfolio .section-title h2').textContent = translations[lang]['portfolio-title'];
+      document.querySelector('.dashboard-cards .card:nth-of-type(1) h3').textContent = translations[lang]['portfolio-1-title'];
+      document.querySelector('.dashboard-cards .card:nth-of-type(1) p').textContent = translations[lang]['portfolio-1-p'];
+      document.querySelector('.dashboard-cards .card:nth-of-type(2) h3').textContent = translations[lang]['portfolio-2-title'];
+      document.querySelector('.dashboard-cards .card:nth-of-type(2) p').textContent = translations[lang]['portfolio-2-p'];
+      document.querySelector('.dashboard-cards .card:nth-of-type(3) h3').textContent = translations[lang]['portfolio-3-title'];
+      document.querySelector('.dashboard-cards .card:nth-of-type(3) p').textContent = translations[lang]['portfolio-3-p'];
+      document.querySelector('#faq .content h3').innerHTML = translations[lang]['faq-title'];
+      document.querySelector('#faq .content p').textContent = translations[lang]['faq-p'];
+      document.querySelector('.faq-item:nth-of-type(1) h3 span:nth-of-type(2)').textContent = translations[lang]['faq-1-q'];
+      document.querySelector('.faq-item:nth-of-type(1) div p').textContent = translations[lang]['faq-1-a'];
+      document.querySelector('.faq-item:nth-of-type(2) h3 span:nth-of-type(2)').textContent = translations[lang]['faq-2-q'];
+      document.querySelector('.faq-item:nth-of-type(2) div p').textContent = translations[lang]['faq-2-a'];
+      document.querySelector('.faq-item:nth-of-type(3) h3 span:nth-of-type(2)').textContent = translations[lang]['faq-3-q'];
+      document.querySelector('.faq-item:nth-of-type(3) div p').textContent = translations[lang]['faq-3-a'];
+      document.querySelector('.faq-item:nth-of-type(4) h3 span:nth-of-type(2)').textContent = translations[lang]['faq-4-q'];
+      document.querySelector('.faq-item:nth-of-type(4) div p').textContent = translations[lang]['faq-4-a'];
+      document.querySelector('#testimonials .section-title h2').textContent = translations[lang]['recommendations-title'];
+      document.querySelector('.testimonial-item:nth-of-type(1) h3').textContent = translations[lang]['recommendation-1-name'];
+      document.querySelector('.testimonial-item:nth-of-type(1) h4').textContent = translations[lang]['recommendation-1-role'];
+      document.querySelector('.testimonial-item:nth-of-type(1) p span').textContent = translations[lang]['recommendation-1-p'];
+      document.querySelector('.testimonial-item:nth-of-type(2) h3').textContent = translations[lang]['recommendation-2-name'];
+      document.querySelector('.testimonial-item:nth-of-type(2) h4').textContent = translations[lang]['recommendation-2-role'];
+      document.querySelector('.testimonial-item:nth-of-type(2) p span').textContent = translations[lang]['recommendation-2-p'];
+      document.querySelector('.testimonial-item:nth-of-type(3) h3').textContent = translations[lang]['recommendation-3-name'];
+      document.querySelector('.testimonial-item:nth-of-type(3) h4').textContent = translations[lang]['recommendation-3-role'];
+      document.querySelector('.testimonial-item:nth-of-type(3) p span').textContent = translations[lang]['recommendation-3-p'];
+    }
+  </script>
 
 </body>
 

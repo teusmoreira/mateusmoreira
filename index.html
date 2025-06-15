@@ -23,19 +23,22 @@
 
   <link href="main.css" rel="stylesheet">
 
-  <style>
+<style>
     .language-switcher a {
-      text-decoration: none; /* Remove o sublinhado por padrão */
+      text-decoration: none; /* Garante que não haja sublinhado por padrão */
       transition: 0.3s;
-      padding: 0 5px; /* Adiciona um pequeno espaçamento para não ficarem colados */
+      padding: 0 5px;
     }
 
-
+    .language-switcher a:hover {
+      text-decoration: none; /* Remove o sublinhado também no estado de hover */
+      /* Opcional: você pode adicionar outro efeito de hover aqui, como uma mudança de cor */
+      /* color: #5c9bff; */ 
+    }
 
     .language-switcher a.active-lang {
-      color: #0d6efd; /* Cor azul para o idioma ativo */
-      font-weight: 700; /* Deixa a fonte em negrito */
-      text-decoration: none; /* Garante que o ativo não seja sublinhado a menos que esteja em hover */
+      color: #0d6efd;
+      font-weight: 700;
     }
   </style>
 

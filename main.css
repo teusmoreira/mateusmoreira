@@ -600,7 +600,7 @@ section,
 .hero {
   position: relative;
   width: 100%;
-  min-height: 90vh; /* altura reduzida */
+  min-height: 85vh; /* altura reduzida */
   display: flex;
   align-items: center;
   justify-content: center;
